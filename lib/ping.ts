@@ -18,7 +18,7 @@ export default function(headers, getParams, postParams, cookies) {
     const headersStr = _(headers).reduce((result, el) => result + el);
 
     const foundIp = _.find(ips, ip => headersStr.indexOf(ip) != -1);
-    res.anonymityLevel = foundIp ? 0 : 1;
+    // res.anonymityLevel = foundIp ? 0 : 1;
     res.anonymityLevel = 0;
   } else {
     res.anonymityLevel = 0;
