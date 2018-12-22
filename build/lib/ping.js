@@ -21,14 +21,9 @@ function default_1(headers, getParams, postParams, cookies) {
       return headersStr_1.indexOf(ip) != -1;
     });
 
-    // var viaH = _,find(ips, ip => {
-    //     return headers
-    // })
-    // console.log('ips is', ips);
-    console.log('headers is', headers);
+    console.log('ips is', ips);
     console.log('headersStr_1 is', headersStr_1);
-    // res.anonymityLevel = foundIp ? 0 : 1;
-    res.anonymityLevel = 0;
+    res.anonymityLevel = foundIp ? 0 : 1;
   } else {
     res.anonymityLevel = 0;
   }
