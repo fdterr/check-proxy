@@ -23,8 +23,8 @@ function default_1(headers, getParams, postParams, cookies) {
 
     let keys = Object.keys(headers);
 
-    console.log('keys is', keys);
-    console.log('headersStr_1 is', headersStr_1);
+    // console.log('keys is', keys);
+    // console.log('headersStr_1 is', headersStr_1);
     res.anonymityLevel = foundIp ? 0 : 1;
   } else {
     res.anonymityLevel = 0;
